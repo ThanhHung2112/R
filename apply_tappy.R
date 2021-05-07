@@ -1,0 +1,20 @@
+
+mt = matrix(c(1,2,3,4,5,6),3,2)
+
+#t???ng t???ng dòng
+apply(mt,1,sum)
+
+# s??? ph???n t??? "Na" trong c???t
+apply(mt,2,count_na)
+
+list1 = list(c(1,2,3),3,5,c(2,5,6))
+#tính d??? dàit???ng ph???n t??? thu???c list1
+lapply(list1,length)
+sapply(list1,length)
+
+# Tinh giá tr??? tb t???ng c???t
+lapply(who,mean)
+sapply(who,mean)
+
+# Tinh tb Population theo Region
+tapply(who$Population,who$Region,mean)
